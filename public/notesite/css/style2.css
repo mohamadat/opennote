@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;700&display=swap');
+
+body{
+    background: url("../images/bg.svg") no-repeat center #fec107;
+    /* background-image: url("");
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-position: center; */
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container{
+    max-width: 90vw;
+    margin: 0 auto;
+    /* padding: 2rem 1rem 2rem 1rem; */
+    padding: 2rem 1rem;
+
+}
+
+
+header{
+    text-align: center;
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.logoimg{
+    height: 150px;
+}
+
+nav{
+       margin: 2em auto 0;
+    max-width: 600px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav ul li a{
+text-decoration: none;
+color: white;
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+
+}
+
+.hero{
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(32, 235, 83, 0.692);
+}
+
+.hero p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2.3rem;
+    margin: 3rem auto;
+}
+
+
+.hero p:before{
+    content: "";
+    display: block;
+    width: 120px;
+    border: 3px solid greenyellow;
+    margin: 1rem auto;
+
+}
+
+figure img{
+    width: 300px;
+    margin: 5rem auto;
+
+}
+
+.hero a{
+    text-decoration: none;
+    background-color: rgba(32, 235, 83, 0.692);
+    padding: 1rem 2.4rem;
+    border: 3px solid rgb(221, 157, 37);
+    border-radius: 50px;
+
+}
+
+/*HOME StArt*/
+
+section{
+    width: 90vw;
+    box-sizing: border-box;
+      max-width: 90vw;
+    margin: 0 auto;
+    /* padding: 2rem 1rem 2rem 1rem; */
+    padding: 2rem 1rem;
+
+}
+
+
+.about-section{
+
+    background-color: #fdfdfd;
+    padding: 100px 0;
+    /*overflow: hidden;*/
+
+}
+
+
+
+.inner-container{
+    width: 90%;
+    padding: 2rem 1rem;
+    background-color: #fdfdfd;
+
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+
+footer{
+    background-color: #3e0f42d0;
+    color: thistle;
+    text-align: center;
+    padding-bottom: 2rem;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.footer-inner{
+    height: auto;
+    width: 90vw;
+    display: flex;
+    flex-flow: column;
+    align-content: space-around;
+    justify-content: center;
+
+}
+
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer h3{
+    color: rgb(177, 31, 177);
+}
+
+.footer-col{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo{
+    width: 100px;
+    padding-top: 3rem;
+}
+
+
+
+
+/* Css Styling only for PC > 800px */
+
+@media only screen and (min-width: 600px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+     flex-flow: wrap;
+        align-items: center;
+
+    }
+
+    nav{
+        margin: 0;
+    }
+
+    nav ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li{
+        padding: 0.5rem 2rem;
+
+    }
+
+    nav ul li a{
+        font-size: 1.35em;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+
+    .highligh{
+        padding: 1rem 2rem;
+        border: 3px solid orange;
+        border-radius: 50px;
+    }
+
+    main{
+               flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+.hero{
+    text-align: left;
+    width: 40%;
+    margin: 0;
+}
+
+.hero h1{
+    font-size: 4rem;
+}
+
+.hero p:before{
+    width: 160px;
+    border: 3px solid greenyellow;
+    margin: 1rem 0;
+
+}
+
+figure{
+    margin-left: auto;
+
+}
+
+    .about-section{
+         background: url("../images/pic.jpg") no-repeat left;
+         background-size: 55%;
+        padding: 50px 40px;
+    }
+    .inner-container{
+          width: 55%;
+        float: right;
+        background-color: #fdfdfd;
+        padding: 50px;
+        }
+
+
+
+        .footer-inner{
+            height: 300px;
+            width: 90vw;
+            display: flex;
+            flex-flow: row;
+            align-content: center;
+            justify-content: space-around;
+
+        }
+  }
+
+
+/*  @media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+
+}
+
+*/
